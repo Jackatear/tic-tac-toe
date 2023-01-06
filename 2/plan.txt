@@ -1,0 +1,38 @@
+Player 1 is X
+Player 2 is O
+
+Player 1 {
+    Marker: X
+    Played = 0
+    win = 0
+}
+
+PLayer 2 { 
+    Marker = 0
+    played = 0
+    win = 0
+}
+
+whosTurn {
+    whosTurn.c = 0
+    if x%2 == 0:
+        whosTurn.marker = x
+    else
+}
+
+
+gridArray =>
+
+[ 0, 1, 2,
+  3, 4, 5,
+  6, 7, 8  ]
+
+when a tile is clicked, we change the corrosponding element in the grid to that 'marker'
+
+How to check if win:
+
+HORIZONTALS -> 123 or 345 or 456 
+VERTICALS -> 036 or 147 or 258
+DIAGONALS -> 148 or 246
+
+once a player.played >= 3 we can run the check functions 

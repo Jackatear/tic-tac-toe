@@ -1,0 +1,79 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: monospace;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+.game-container {
+    height: 100%;
+    background-color: rgb(242, 242, 242);
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.player {
+    font-size: 2rem;
+    background-color: green;
+    text-align: center;
+    padding: 2px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 500px;
+    width: 500px;
+    gap: 10px;
+    margin-inline: auto;
+    margin-top: 10px;
+}
+
+.sq {
+    background-color: rgb(106, 127, 146);
+    border-radius: 30px;
+    box-sizing: border-box; 
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.winner-banner {
+    display: none;
+}
+
+.winner {
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 500px;
+    height: 500px;
+    top: 124px;
+    opacity: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    background-color: lightskyblue;
+
+}
+
+.winner button {
+    border: 0;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 4px;
+}
