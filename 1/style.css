@@ -1,0 +1,35 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+.game-container {
+    height: 100%;
+    background-color: rgb(242, 242, 242);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 600px;
+    width: 600px;
+    gap: 10px;
+    margin-inline: auto;
+    margin-top: 10px;
+}
+
+.sq {
+    background-color: rgb(106, 127, 146);
+    border-radius: 30px;
+    box-sizing: border-box; 
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+}
